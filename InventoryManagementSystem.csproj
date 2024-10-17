@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.3.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Constants\" />
+    <Folder Include="Common\Enums\" />
+    <Folder Include="Common\Helpers\" />
+    <Folder Include="Common\MapperProfiles\" />
+    <Folder Include="Common\Middlewares\" />
+    <Folder Include="Data\Repositories\" />
+    <Folder Include="Features\Inventory\AddStock\" />
+    <Folder Include="Features\Inventory\TransferStock\" />
+    <Folder Include="Features\Inventory\RemoveStock\" />
+    <Folder Include="Features\Products\AddProduct\" />
+    <Folder Include="Features\Products\DeleteProduct\" />
+    <Folder Include="Features\Products\GetProductDetails\" />
+    <Folder Include="Features\Products\ListAllProducts\" />
+    <Folder Include="Features\Products\UpdateProduct\" />
+    <Folder Include="Features\Reports\LowStockReport\" />
+    <Folder Include="Features\Reports\TransactionHistory\" />
+  </ItemGroup>
+
+</Project>
